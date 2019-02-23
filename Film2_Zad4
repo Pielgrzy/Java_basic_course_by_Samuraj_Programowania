@@ -1,0 +1,15 @@
+/*
+4. Utwórz zmienną String o wartości „Wynikiem dodawania liczby 2 i 2 jest „.
+Utwórz jedną zmienną typu int o wartości 2 i wykonaj dodawanie.
+Nie stosuj zmiennych pomocniczych, wszystkie operacje wykonaj na jednej zmiennej.
+ */
+
+// Main code
+
+public class Film2_zad4 {
+    public static void main(String[] args){
+        String a = "Wynikiem dodawania liczby 2 i 2 jest ";
+        int b = 2;
+        System.out.println(a + (b+b));
+    }
+}
