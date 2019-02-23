@@ -4,6 +4,8 @@ Jaka jest teraz wartość zmiennej? Dlaczego tak się dzieje? Jak nazywamy takie
 
  */
 
+// Main code
+
 public class Film2_zad3 {
     public static void main(String[] args){
 double k = 10.123456789;
