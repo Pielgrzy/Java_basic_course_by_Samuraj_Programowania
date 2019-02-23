@@ -1,0 +1,27 @@
+/*
+1. Przy pomocy pętli wydrukuj na ekranie coś takiego:
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+*********
+**********
+
+*/
+
+// Main code
+
+public class Film3_zad1 {
+    public static void main(String[] args){
+        String a = "";
+        for(int i=0; i<10; i++) {
+            a = a+"*";
+            System.out.println(a);
+        }
+    }
+}
