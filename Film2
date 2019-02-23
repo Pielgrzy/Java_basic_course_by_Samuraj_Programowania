@@ -1,5 +1,5 @@
-/*1. Utwórz dwie zmienne int o nazwach z1 i z2, o wartościach odpowiednio 15 i 5, 
-a następnie wydrukuj na ekranie: 
+/*
+1. Utwórz dwie zmienne int o nazwach z1 i z2, o wartościach odpowiednio 15 i 5, a następnie wydrukuj na ekranie: 
 15+5= 
 15-5= 
 15*5= 
@@ -9,6 +9,8 @@ a następnie wydrukuj na ekranie:
 ENG translate by google translator:
 1. Create two int variables named z1 and z2, with values of 15 and 5, respectively, and then print on the screen:
 */
+
+// Main code
 
 public class Zad1film2 {
     public static void main(String[] args){
