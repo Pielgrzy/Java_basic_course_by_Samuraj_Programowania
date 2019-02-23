@@ -1,0 +1,16 @@
+/*
+Oblicz obwód i pole koła o promieniu 47.
+ */
+
+// Main code
+
+public class Film2_zad5 {
+    public static void main(String[] args){
+        int a = 47;
+        double ob, po;
+        ob = 2*3.14*a;
+        po = 3.14*(a*a);
+        System.out.println("Obwód koła dla r=47 wynosi: " + ob);
+        System.out.println("Pole koła dla r=47 wynosi: " + po);
+    }
+}
