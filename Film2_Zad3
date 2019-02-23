@@ -14,3 +14,4 @@ double k = 10.123456789;
         }
     }
 }
+// Szczerze mówiąc nie wiem dlaczego po 6 pętli dodana jest jakaś szczątkowa wartość...
