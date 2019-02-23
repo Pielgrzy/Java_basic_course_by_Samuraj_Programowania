@@ -1,0 +1,16 @@
+/*
+3. Utwórz zmienną typu double o wartości 10.123456789 i wykonaj na niej 10 inkrementacji.
+Jaka jest teraz wartość zmiennej? Dlaczego tak się dzieje? Jak nazywamy takie zjawisko?
+
+ */
+
+public class Film2_zad3 {
+    public static void main(String[] args){
+double k = 10.123456789;
+        for(int i = 1; i < 10; i++){
+            k++;
+            System.out.println("Liczba = " + k);
+
+        }
+    }
+}
