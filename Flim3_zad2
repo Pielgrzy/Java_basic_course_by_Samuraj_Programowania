@@ -1,0 +1,34 @@
+/*
+2. Utwórz i wydrukuj na ekranie taką tablicę używając poleceń new int oraz pętli.
+
+11111
+111
+11111111
+
+ */
+
+// Main code
+
+
+public class Film3_zad2 {
+    public static void main(String[] args){
+
+        int a = 5;
+        int b = 3;
+        int c = 8;
+
+        int tab1[] = new int[a];
+        int tab2[] = new int[b];
+        int tab3[] = new int[c];
+
+        for(int i = 0; i < tab1.length; i++)
+            System.out.print(1);
+        System.out.println();
+        for(int j = 0; j < tab2.length; j++)
+            System.out.print(1);
+        System.out.println();
+        for(int k = 0; k < tab3.length; k++)
+            System.out.print(1);
+
+    }
+}
