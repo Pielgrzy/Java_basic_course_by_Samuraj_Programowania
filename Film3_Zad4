@@ -1,0 +1,17 @@
+/*
+
+4. Utwórz 10-elementową tablicę i przypisz jej komórkom wartości 11, 22 itd. do 110, a następnie wydrukuj.
+
+ */
+
+// Main code
+
+public class Film3_zad4 {
+    public static void main(String[] args){
+        int tab[] = {11, 22, 33, 44, 55, 66, 77, 88, 99, 111};
+        for(int y : tab)
+        {
+            System.out.print(y + ", ");
+        }
+    }
+}
