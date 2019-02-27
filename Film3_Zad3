@@ -1,0 +1,16 @@
+/*
+
+        3. Wydrukuj litery alfabetu od "a" do "z" przy pomocy pętli.
+
+*/
+
+// Main code
+
+public class Film3_zad3 {
+    public static void main(String[] args){
+
+        for(char abc = 'a'; abc <= 'z'; abc++){
+            System.out.print(" " + abc);
+        }
+    }
+}
