@@ -1,0 +1,40 @@
+/*
+
+4. Zadanie po angielsku. Stwórz system do robienia wizytówek. Odpytaj użytkownika o imię (name), 
+nazwisko (surname), numer telefonu (telephone w typie int). Następnie wydrukuj to w ładny sposób, 
+tzn ramka i może jakieś efekty, wedle woli i chęci.
+
+ */
+
+//Main code
+
+import java.util.Scanner;
+
+public class Film4_zad4 {
+    public static void main(String[] args){
+        // definiowanie zmiennych
+        String a,b,c,d;
+        // definiowanie instrukcji użytkownika
+        Scanner tekst = new Scanner(System.in);
+        // inicjacja HUDa
+        System.out.println("Witaj w kreatorze wizytówek");
+        System.out.println("Wprowadź nazwę korporacji"); // wartość Strungu a
+        a = tekst.next();
+        System.out.println("Podaj imię"); // wartość Strungu b
+        b = tekst.next();
+        System.out.println("Podaj nazwisko"); // wartość Stringu c
+        c = tekst.next();
+        System.out.println("Podaj numer telefonu"); // wartość Stringu d
+        d = tekst.next();
+        System.out.println("---------------------------------------");
+        System.out.println("Corporation:");
+        System.out.println("   " + a);
+        System.out.println("                Name and Surname:");
+        System.out.println("                " + b + " " + c);
+        System.out.println("                Phone:");
+        System.out.println("                " + d);
+        System.out.println("                Mail:");
+        System.out.println("                " + b + "." + c + "@" + a + ".com");
+        System.out.println("---------------------------------------");
+    }
+}
