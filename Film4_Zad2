@@ -1,0 +1,46 @@
+/*
+
+2. Użytkownik wprowadza 3 liczby od 1 do 100. Wydrukuj je w kolejności rosnącej.
+
+ */
+
+// Main code
+
+import java.util.Scanner;
+
+public class Film4_zad2 {
+    public static void main(String[] args) {
+        System.out.println("Witaj wędrowcze podaj 3 liczby od 1 do 100");
+        //Wprowadzanie zmiennej liczbowej z klawiatur
+        Scanner liczby = new Scanner(System.in);
+        //Ilość zmiennych
+        int a, b, c;
+        System.out.print("a=");
+        a = liczby.nextInt();
+        System.out.print("b=");
+        b = liczby.nextInt();
+        System.out.print("c=");
+        c = liczby.nextInt();
+
+        //Warunek brzegowy mówiący że liczby mają się mieścić w granicach od 1 do 100
+        if (a < 1 || a > 100 || b < 1 || b > 100 || c < 1 || c > 100)
+            System.out.println("Wprowadzono liczby ze złego przedziału");
+        else{
+            //Sprawdzanie warunków odnośnie ustawienie liczby od największej do najmniejszej
+            System.out.println("A teraz wprowadzimy porządek...");
+            if (a > b && b > c)
+                System.out.println(a + ", " + b + ", " + c);
+            else if (a > c && c > b) {
+                System.out.println(a + ", " + c + ", " + b);
+            } else if (b > a && a > c) {
+                System.out.println(b + ", " + a + ", " + c);
+            } else if (b > c && c > a) {
+                System.out.println(b + ", " + c + ", " + a);
+            } else if (c > b && b > a) {
+                System.out.println(c + ", " + b + ", " + a);
+            } else
+                System.out.println(c + ", " + a + ", " + b);
+
+        }
+    }
+}
