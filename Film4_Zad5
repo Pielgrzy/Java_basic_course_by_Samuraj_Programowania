@@ -1,0 +1,36 @@
+/*
+5. Pobierz od użytkownika dowolny tekst, następnie pobierz liczbę. Następnie spytaj, czy wydrukować dany tekst.
+W zależności od odpowiedzi, 1 oznacza tak, 2 oznacza nie, wykonaj zadanie , tzn. wydrukuj tyle razy, jaką liczbę
+podał użytkownik. Jeśli użytkownik wpisze coś innego niż 1 lub 2, wypisz „nie zrozumiałem, wybierz odpowiedź jeszcze raz”.
+ */
+
+// Main code
+
+import java.util.Scanner;
+
+public class Film4_zad5 {
+    public static void main(String[] args){
+        System.out.println("Cześć młody, jestem durkarką!");
+        Scanner tekst = new Scanner(System.in);
+        String t; // zmienna dla całego tekstu
+        System.out.println("Wpisz tekst (jeden WYRAZ bo inaczej się posypie) a ja go wydrukuje :)");
+        t = tekst.next();
+        System.out.println("Hahaha chcesz to wydrukować?!");
+        System.out.println("1 = Tak czy 2 = Nie");
+        int a, b;
+        a = tekst.nextInt();
+        if(a == 1){
+        System.out.println("Ile razy mam to druknać?");
+        b = tekst.nextInt();
+            for(int i = 1; i <= b; i++){
+                System.out.println(t);
+            }
+        }
+        else if(a == 2)
+        {
+
+        }
+        else
+            System.out.println("Wybierz 1 lub 2 czy to takie trudne?");
+    }
+}
