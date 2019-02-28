@@ -1,0 +1,42 @@
+/*
+
+3. Stwórz system do obliczania punktów. Użytkownik wprowadza po kolei 3 ilości, punkty za styl, punkty za efekty i punkty za rezultat.
+Punkty za styl pomnóż przez 0.2, punkty za efekty przez 0.3, a punkty za rezultat przez 0.5 i wydrukuj sumę tych działań.
+
+ */
+
+// Main code
+
+import java.util.Scanner;
+
+public class Film4_zad3 {
+    public static void main(String[] args) {
+        // Opis - wprowadzenie
+        System.out.println("----------------------------------"); //seperacja
+        System.out.println("Witaj w programie gdzie będziesz oceniać ludzi za styl, efekty i rezultat w skali od 1 do 10.");
+        System.out.println("Algorytm to:");
+        System.out.println("Styl - mnożnik 0,2"); //a
+        System.out.println("Efekty - mnożnik 0,3"); //b
+        System.out.println("Rezultat - mnożnik 0,5"); //c
+        System.out.println("----------------------------------"); //seperacja
+        // definiowanie zmiennej do wprowadzenia przez użytkownika
+        Scanner wartosc = new Scanner(System.in);
+        int a, b, c;
+        double d;
+        System.out.print("Wprowadź punkty za styl = ");
+        a = wartosc.nextInt();
+        System.out.print("Wprowadź punkty za efekty = ");
+        b = wartosc.nextInt();
+        System.out.print("Wprowadź punkty za rezultat = ");
+        c = wartosc.nextInt();
+        System.out.println("----------------------------------"); //seperacja
+        // warunek brzegowy wyboru liczb od 1 do 10
+        if (a < 1 || a > 10 || b < 1 || b > 10 || c < 1 || c > 10)
+            System.out.println("Wprowadzono punkty z po za zakresu.");
+        else {
+            // określenie wartości końcowej
+            d = a * 0.2 + b * 0.3 + c * 0.5;
+            System.out.println("Osięgnięto punktów = " + d + ", Gratulacje!");
+        }
+    }
+}
